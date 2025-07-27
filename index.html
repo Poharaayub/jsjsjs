@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>OCS NFI Upload Foto Apps</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="container">
+    <header class="header">
+      <h1>📷 OCS NFI Upload Foto Apps</h1>
+    </header>
+
+    <section class="camera-card elevation">
+      <video id="video" autoplay playsinline></video>
+
+      <div class="controls">
+        <button class="btn primary" onclick="takePhoto()">📸 Ambil Foto</button>
+        <button class="btn dropbox" onclick="uploadPhoto()">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Dropbox_Icon.svg" alt="Dropbox" />
+          Upload
+        </button>
+      </div>
+    </section>
+
+    <section class="preview-card elevation">
+      <img id="preview" alt="Preview Foto" />
+    </section>
+  </main>
+
+  <canvas id="canvas" style="display: none;"></canvas>
+  <script src="script.js"></script>
+</body>
+</html>
